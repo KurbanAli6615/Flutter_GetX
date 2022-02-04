@@ -1,0 +1,6 @@
+
+1 ==> StateMangement (other)
+
+    - GetX to create instance of controller in design code
+    - GetBuilder to create instance of controller in design code
+    - GetBuilder(From ID of var) to create instance of controller in design code
