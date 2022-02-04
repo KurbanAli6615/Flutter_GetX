@@ -6,6 +6,11 @@
     - GetBuilder(From ID of var) to create instance of controller in design code
     
 
-  ==> Callbacks in GetXController
+ 2 ==> Callbacks in GetXController
 
     - we use workes for call back in dart. suppose we have to add Textfield did change then we  use debounce worker in dart.
+
+
+
+ 3 ==> Callbacks in Getxservice
+    - Getxservices are used to store the object parement in memory till the app is live. We need to use Getxservice insted of GetXController if we want same functionality in app.
