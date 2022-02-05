@@ -11,7 +11,7 @@ class ApiService {
     if (response.statusCode == 200) {
       var jsonString = response.body;
 
-      return welcomeFromJson(jsonString);
+      return productModelFromJson(jsonString);
     }
     return [];
   }

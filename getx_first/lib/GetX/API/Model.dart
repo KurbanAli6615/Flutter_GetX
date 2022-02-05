@@ -1,13 +1,9 @@
-// To parse this JSON data, do
-//
-//     final welcome = welcomeFromJson(jsonString);
-
 import 'dart:convert';
 
-List<ProductModel> welcomeFromJson(String str) => List<ProductModel>.from(
+List<ProductModel> productModelFromJson(String str) => List<ProductModel>.from(
     json.decode(str).map((x) => ProductModel.fromJson(x)));
 
-String welcomeToJson(List<ProductModel> data) =>
+String productModelToJson(List<ProductModel> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class ProductModel {
@@ -22,7 +18,7 @@ class ProductModel {
     required this.productLink,
     required this.websiteLink,
     required this.description,
-    required this.rating,
+    this.rating,
     required this.category,
     required this.productType,
     required this.tagList,
