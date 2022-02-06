@@ -1,17 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_first/GetX/API/makeup_list.dart';
-import 'package:getx_first/GetX/Localization/Localization.dart';
-import 'package:getx_first/GetX/Routes/getx_named_routes.dart';
-import 'package:getx_first/GetX/StateManagement/getx_obx.dart';
-import 'package:getx_first/GetX/getx_dialog.dart';
-import 'package:getx_first/GetX/getx_snackbar.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:getx_first/GetX/Validations_Storage/validation_storage.dart';
 
-import 'GetX/Localization/Localize_text.dart';
-import 'GetX/Routes/getx_route_unnamed_navigation.dart';
-import 'GetX/getx_bottomsheet.dart';
-
-void main() {
+Future<void> main() async {
+  await GetStorage.init();
   runApp(const MyApp());
 }
 
@@ -22,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MakeUpList(),
+      home: ValidationStorage(),
       // translations: LocalizedText(),
       // locale: Locale('en_US'),
       // fallbackLocale: Locale('en_US'),

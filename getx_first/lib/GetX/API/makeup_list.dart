@@ -16,7 +16,7 @@ class MakeUpList extends StatelessWidget {
       body: Obx(
         () {
           if (_controller.isLoading.value) {
-            return CircularProgressIndicator();
+            return Center(child: CircularProgressIndicator());
           } else {
             return ListView.builder(
               itemCount: _controller.productList.length,

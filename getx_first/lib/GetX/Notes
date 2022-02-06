@@ -14,3 +14,7 @@
 
  3 ==> Callbacks in Getxservice
     - Getxservices are used to store the object parement in memory till the app is live. We need to use Getxservice insted of GetXController if we want same functionality in app.
+ 
+ 
+ 4 ==> GetView in GetWidget
+   - GetView and Getwidget are used to create class of design with extending Getview or getwidget insted of STLESS and STFUL 
